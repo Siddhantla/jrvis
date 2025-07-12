@@ -1,0 +1,65 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #000000, #0a0a0a, #001f1f);
+  color: #00ffe1;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+img {
+  margin-top: 60px;
+  width: 200px;
+  filter: drop-shadow(0 0 20px #00ffe1);
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px #00ffe1);
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 25px #00ffe1);
+    transform: scale(1.05);
+  }
+}
+
+h1 {
+  font-size: 32px;
+  margin: 20px 0 30px;
+  text-shadow: 0 0 15px #00ffe1;
+}
+
+input, button {
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+#chatbox {
+  width: 300px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px #007bff;
+}
+
+button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 0 15px #00aaff;
+}
+
+#output {
+  margin-top: 30px;
+  font-size: 18px;
+  text-shadow: 0 0 10px #00ffe1;
+}
